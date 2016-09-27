@@ -1,0 +1,14 @@
+/Users/manuqiao/Documents/项目/xamarin/manuqiao/XamarinDemo.git/App1/App1.iOS/obj/iPhone/Debug/mtouch-cache/32/Link/System.Runtime.Serialization.dll
+/Users/manuqiao/Documents/项目/xamarin/manuqiao/XamarinDemo.git/App1/App1.iOS/obj/iPhone/Debug/mtouch-cache/32/Link/System.ServiceModel.Internals.dll
+/Users/manuqiao/Documents/项目/xamarin/manuqiao/XamarinDemo.git/App1/App1.iOS/obj/iPhone/Debug/mtouch-cache/32/Link/Xamarin.Forms.Platform.iOS.dll
+/Users/manuqiao/Documents/项目/xamarin/manuqiao/XamarinDemo.git/App1/App1.iOS/obj/iPhone/Debug/mtouch-cache/32/Link/App1.dll
+/Users/manuqiao/Documents/项目/xamarin/manuqiao/XamarinDemo.git/App1/App1.iOS/obj/iPhone/Debug/mtouch-cache/32/Link/Xamarin.Forms.Platform.dll
+/Users/manuqiao/Documents/项目/xamarin/manuqiao/XamarinDemo.git/App1/App1.iOS/obj/iPhone/Debug/mtouch-cache/32/Link/App1iOS.exe
+/Users/manuqiao/Documents/项目/xamarin/manuqiao/XamarinDemo.git/App1/App1.iOS/obj/iPhone/Debug/mtouch-cache/32/Link/System.dll
+/Users/manuqiao/Documents/项目/xamarin/manuqiao/XamarinDemo.git/App1/App1.iOS/obj/iPhone/Debug/mtouch-cache/32/Link/System.Xml.dll
+/Users/manuqiao/Documents/项目/xamarin/manuqiao/XamarinDemo.git/App1/App1.iOS/obj/iPhone/Debug/mtouch-cache/32/Link/Xamarin.iOS.dll
+/Users/manuqiao/Documents/项目/xamarin/manuqiao/XamarinDemo.git/App1/App1.iOS/obj/iPhone/Debug/mtouch-cache/32/Link/System.Core.dll
+/Users/manuqiao/Documents/项目/xamarin/manuqiao/XamarinDemo.git/App1/App1.iOS/obj/iPhone/Debug/mtouch-cache/32/Link/mscorlib.dll
+/Users/manuqiao/Documents/项目/xamarin/manuqiao/XamarinDemo.git/App1/App1.iOS/obj/iPhone/Debug/mtouch-cache/32/Link/Xamarin.Forms.Core.dll
+/Users/manuqiao/Documents/项目/xamarin/manuqiao/XamarinDemo.git/App1/App1.iOS/obj/iPhone/Debug/mtouch-cache/32/Link/System.Net.Http.dll
+/Users/manuqiao/Documents/项目/xamarin/manuqiao/XamarinDemo.git/App1/App1.iOS/obj/iPhone/Debug/mtouch-cache/32/Link/Mono.Dynamic.Interpreter.dll
