@@ -1,4 +1,49 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:local="clr-namespace:HiPolePM" x:Class="HiPolePM.HiPolePMPage">
-	<Label Text="Welcome to Xamarin Forms!" VerticalOptions="Center" HorizontalOptions="Center" />
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+			 xmlns:local="clr-namespace:HiPolePM" 
+			 x:Class="HiPolePM.HiPolePMPage"
+			 Title="ListView Demo Page">
+<!--	<Label Text="Welcome to Xamarin Forms!123" VerticalOptions="Center" HorizontalOptions="Center" />-->
+	<!--<StackLayout>
+	    <Slider x:Name="slider"
+				Maximum="100"
+			VerticalOptions="CenterAndExpand" />
+
+	    <Label x:Name="simpleLabel"
+			   Text="A simple Label"
+	           Font="Large"
+	           HorizontalOptions="Center"
+	           VerticalOptions="CenterAndExpand" />
+
+		<Label  BindingContext="{x:Reference slider}"
+				x:Name="sizeLabel"
+				Text="Size Label"
+				FontSize="{Binding Path=Value}"
+	           HorizontalOptions="Center"
+	           VerticalOptions="CenterAndExpand" />
+		
+	    <Button Text="Click Me!"
+	            HorizontalOptions="Center"
+	            VerticalOptions="CenterAndExpand" 
+				Clicked="onButtonClicked"/>
+  </StackLayout>-->
+	<ListView ItemsSource="{x:Static local:NamedColor.All}">
+		<ListView.ItemTemplate>
+	      <DataTemplate>
+	        <ViewCell>
+	          <ViewCell.View>
+				<StackLayout Padding="5, 5, 0, 5"
+			                 Orientation="Horizontal"
+			                 Spacing="15">
+					<BoxView WidthRequest="50"
+			        		 HeightRequest="50"
+			                 Color="{Binding Color}" />
+       				<Label Text="{Binding FriendlyName}" />
+				</StackLayout>
+	          </ViewCell.View>
+	        </ViewCell>
+	      </DataTemplate>
+	    </ListView.ItemTemplate>
+	</ListView>
 </ContentPage>
