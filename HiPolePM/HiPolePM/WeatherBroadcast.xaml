@@ -4,7 +4,9 @@
 		xmlns:local="clr-namespace:HiPolePM"
 		x:Class="HiPolePM.WeatherBroadcast">
 	<ContentPage.Content>
-		<ListView ItemsSource="{x:Static local:NamedColor.All}">
+		<ListView x:Name="listView"
+				IsPullToRefreshEnabled="true"
+				>
 			<ListView.ItemTemplate>
 		      <DataTemplate>
 		        <ViewCell>
