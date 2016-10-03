@@ -5,30 +5,24 @@
 			 x:Class="HiPolePM.HiPolePMPage"
 			 Title="ListView Demo Page">
 <!--	<Label Text="Welcome to Xamarin Forms!123" VerticalOptions="Center" HorizontalOptions="Center" />-->
-	<!--<StackLayout>
-	    <Slider x:Name="slider"
-				Maximum="100"
-			VerticalOptions="CenterAndExpand" />
-
+	<StackLayout>
+	    
 	    <Label x:Name="simpleLabel"
 			   Text="A simple Label"
-	           Font="Large"
+	           Font="Small"
+				HeightRequest="200"
 	           HorizontalOptions="Center"
 	           VerticalOptions="CenterAndExpand" />
 
-		<Label  BindingContext="{x:Reference slider}"
-				x:Name="sizeLabel"
-				Text="Size Label"
-				FontSize="{Binding Path=Value}"
-	           HorizontalOptions="Center"
-	           VerticalOptions="CenterAndExpand" />
 		
+		<Entry x:Name="entry"
+				Text="http://darknessproduction.com/tests/RequestInfo.php"/>
 	    <Button Text="Click Me!"
 	            HorizontalOptions="Center"
 	            VerticalOptions="CenterAndExpand" 
 				Clicked="onButtonClicked"/>
-  </StackLayout>-->
-	<ListView ItemsSource="{x:Static local:NamedColor.All}">
+  </StackLayout>
+	<!--<ListView ItemsSource="{x:Static local:NamedColor.All}">
 		<ListView.ItemTemplate>
 	      <DataTemplate>
 	        <ViewCell>
@@ -45,5 +39,5 @@
 	        </ViewCell>
 	      </DataTemplate>
 	    </ListView.ItemTemplate>
-	</ListView>
+	</ListView>-->
 </ContentPage>
