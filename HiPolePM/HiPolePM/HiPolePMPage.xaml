@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
 			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-			 xmlns:local="clr-namespace:HiPolePM" 
+			  
 			 x:Class="HiPolePM.HiPolePMPage"
 			 Title="ListView Demo Page">
 <!--	<Label Text="Welcome to Xamarin Forms!123" VerticalOptions="Center" HorizontalOptions="Center" />-->
@@ -22,22 +22,4 @@
 	            VerticalOptions="CenterAndExpand" 
 				Clicked="onButtonClicked"/>
   </StackLayout>
-	<!--<ListView ItemsSource="{x:Static local:NamedColor.All}">
-		<ListView.ItemTemplate>
-	      <DataTemplate>
-	        <ViewCell>
-	          <ViewCell.View>
-				<StackLayout Padding="5, 5, 0, 5"
-			                 Orientation="Horizontal"
-			                 Spacing="15">
-					<BoxView WidthRequest="50"
-			        		 HeightRequest="50"
-			                 Color="{Binding Color}" />
-       				<Label Text="{Binding FriendlyName}" />
-				</StackLayout>
-	          </ViewCell.View>
-	        </ViewCell>
-	      </DataTemplate>
-	    </ListView.ItemTemplate>
-	</ListView>-->
 </ContentPage>

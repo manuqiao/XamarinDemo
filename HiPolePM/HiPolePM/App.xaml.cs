@@ -8,7 +8,7 @@ namespace HiPolePM
 		{
 			InitializeComponent();
 
-			MainPage = new HiPolePMPage();
+			MainPage = new NavigationPage (new HiPolePMPage ());
 		}
 
 		protected override void OnStart()

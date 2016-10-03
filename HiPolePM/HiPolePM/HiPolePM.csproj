@@ -30,6 +30,9 @@
   <ItemGroup>
     <EmbeddedResource Include="App.xaml" />
     <EmbeddedResource Include="HiPolePMPage.xaml" />
+    <EmbeddedResource Include="WeatherBroadcast.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App.xaml.cs">
@@ -41,6 +44,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="NamedColor.cs" />
     <Compile Include="RequestModel.cs" />
+    <Compile Include="WeatherBroadcast.xaml.cs">
+      <DependentUpon>WeatherBroadcast.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">
