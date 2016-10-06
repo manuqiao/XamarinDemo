@@ -16,8 +16,8 @@
 				                 Spacing="15">
 						<BoxView WidthRequest="50"
 				        		 HeightRequest="50"
-				                 Color="{Binding Color}" />
-	       				<Label Text="{Binding FriendlyName}" />
+				                 Color="White" />
+	       				<Label Text="aabbcc" />
 					</StackLayout>
 		          </ViewCell.View>
 		        </ViewCell>
@@ -26,3 +26,7 @@
 		</ListView>
 	</ContentPage.Content>
 </ContentPage>
+<!--<BoxView WidthRequest="50"
+				        		 HeightRequest="50"
+				                 Color="{Binding Color}" />
+	       				<Label Text="{Binding FriendlyName}" />-->

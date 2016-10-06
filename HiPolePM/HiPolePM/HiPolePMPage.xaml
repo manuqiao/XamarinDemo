@@ -17,7 +17,13 @@
 		
 		<Entry x:Name="entry"
 				Text="http://darknessproduction.com/tests/RequestInfo.php"/>
-	    <Button Text="Click Me!"
+		<Button x:Name="requestButton"
+				Text="Request"
+	            HorizontalOptions="Center"
+	            VerticalOptions="CenterAndExpand" 
+				Clicked="onButtonClicked"/>
+	    <Button x:Name="nextPageButton"
+				Text="Next"
 	            HorizontalOptions="Center"
 	            VerticalOptions="CenterAndExpand" 
 				Clicked="onButtonClicked"/>

@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-
+using System.Net.Http;
 using Xamarin.Forms;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;                
 
 namespace HiPolePM
 {
@@ -11,15 +13,22 @@ namespace HiPolePM
 		public WeatherBroadcast()
 		{
 			InitializeComponent();
-			NamedColor namedColor = new NamedColor();
-			listView.ItemsSource = namedColor.All;
-			listView.RefreshCommand = new Command (OnRefresh);
+			listView.RefreshCommand = new Command(OnRefresh);
+			OnRefresh();
 		}
-		public void OnRefresh()
+		public async void OnRefresh()
 		{
-			NamedColor namedColor = new NamedColor();
-			listView.ItemsSource = namedColor.All;
-			listView.EndRefresh ();
+			string jsonText = await WebService.requestWeatherBroadcast("shanghai");
+			//string jsonText = "{\"value1\":\"key1\"}";
+			//var dic = Utils.DeserializeJsonNested(jsonText);
+			JArray posts = JsonConvert.DeserializeObject<JArray>(jsonText);
+
+			var value = posts[0]["_links"]["about"][0]["href"];
+			//var dic = JsonConvert.DeserializeObject<dynamic>(jsonText);
+
+			//WeatherResponseModel model = JsonConvert.DeserializeObject<WeatherResponseModel>(jsonText, new JsonConverter[] { new MQJsonConverter() });
+			//Posts posts = JsonConvert.DeserializeObject<Posts>(jsonText);
+			//var buddies = JObject.Parse(jsonText).SelectToken("$.Buddies.items").ToObject<JObject>();
 		}
 	}
 }

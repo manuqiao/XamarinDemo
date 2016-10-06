@@ -47,6 +47,12 @@
     <Compile Include="WeatherBroadcast.xaml.cs">
       <DependentUpon>WeatherBroadcast.xaml</DependentUpon>
     </Compile>
+    <Compile Include="WebService\WebService.cs" />
+    <Compile Include="Utils.cs" />
+    <Compile Include="MQJsonConverter.cs" />
+    <Compile Include="WebService\WeatherResponseModel.cs" />
+    <Compile Include="WebService\HiPole\Posts\Posts.cs" />
+    <Compile Include="WebService\HiPole\Posts\Post\Post.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">
@@ -67,9 +73,22 @@
     <Reference Include="System.Net.Http.Primitives">
       <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\portable-net40+sl4+win8+wp71+wpa81\System.Net.Http.Primitives.dll</HintPath>
     </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\packages\Newtonsoft.Json.9.0.1\lib\portable-net45+wp80+win8+wpa81\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="LitJson">
+      <HintPath>..\packages\LitJson.0.7.0\lib\LitJson.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="WebService\" />
+    <Folder Include="WebService\HiPole\" />
+    <Folder Include="WebService\HiPole\Posts\" />
+    <Folder Include="WebService\HiPole\Posts\Post\" />
+    <Folder Include="WebService\HiPole\Posts\Post\about\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.2.3.2.127\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.3.2.127\build\portable-win+net45+wp80+win81+wpa81+MonoAndroid10+MonoTouch10+Xamarin.iOS10\Xamarin.Forms.targets')" />

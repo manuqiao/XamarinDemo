@@ -13,29 +13,19 @@ namespace HiPolePM
 		}
 		async void onButtonClicked(object sender, EventArgs args)
 		{
-			//////simpleLabel.Text = count++.ToString();	
-			//HttpClient client;
-			//client = new HttpClient();
-			//client.MaxResponseContentBufferSize = 256000;
-
-			//var uri = new Uri(entry.Text);
-			////var uri = new Uri("http://www.baidu.com");
-
-			//try
-			//{
-			//	var response = await client.GetAsync(uri);
-			//	if (response.IsSuccessStatusCode)
-			//	{
-			//		var content = response.Content.ReadAsStringAsync();
-			//		simpleLabel.Text = response.ToString();
-			//		//Items = JsonConvert.DeserializeObject<List<TodoItem>>(content);
-			//	}
-			//}
-			//catch (Exception e)
-			//{
-			//	simpleLabel.Text = e.ToString();
-			//}
-			Navigation.PushAsync (new WeatherBroadcast(), true);
+			if (sender is Button)
+			{
+				Button button = (Button)sender;
+				if (button == requestButton)
+				{
+					var text = await WebService.requestWeatherBroadcast("shanghai");
+					simpleLabel.Text = text;
+				}
+				else if (button == nextPageButton)
+				{
+					Navigation.PushAsync(new WeatherBroadcast(), true);
+				}
+			}
 		}
 	}
 }
