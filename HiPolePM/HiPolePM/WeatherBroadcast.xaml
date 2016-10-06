@@ -17,7 +17,7 @@
 						<BoxView WidthRequest="50"
 				        		 HeightRequest="50"
 				                 Color="White" />
-	       				<Label Text="aabbcc" />
+	       				<Label Text="{Binding Title}" />
 					</StackLayout>
 		          </ViewCell.View>
 		        </ViewCell>

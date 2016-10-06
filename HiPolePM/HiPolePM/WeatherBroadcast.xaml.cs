@@ -19,16 +19,18 @@ namespace HiPolePM
 		public async void OnRefresh()
 		{
 			string jsonText = await WebService.requestWeatherBroadcast("shanghai");
-			//string jsonText = "{\"value1\":\"key1\"}";
-			//var dic = Utils.DeserializeJsonNested(jsonText);
 			JArray posts = JsonConvert.DeserializeObject<JArray>(jsonText);
+			//var value = posts[0];//["_links"]["about"][0]["href"];
+			List<ArticlePostModel> postModels = new List<ArticlePostModel>();
+			foreach (JObject item in posts)
+			{
+				ArticlePostModel postModel = new ArticlePostModel();
+				postModel.Title = (string)(item["title"]["rendered"]);
+				postModels.Add(postModel);
+			}
 
-			var value = posts[0]["_links"]["about"][0]["href"];
-			//var dic = JsonConvert.DeserializeObject<dynamic>(jsonText);
-
-			//WeatherResponseModel model = JsonConvert.DeserializeObject<WeatherResponseModel>(jsonText, new JsonConverter[] { new MQJsonConverter() });
-			//Posts posts = JsonConvert.DeserializeObject<Posts>(jsonText);
-			//var buddies = JObject.Parse(jsonText).SelectToken("$.Buddies.items").ToObject<JObject>();
+			listView.ItemsSource = postModels;
+			listView.EndRefresh();
 		}
 	}
 }
