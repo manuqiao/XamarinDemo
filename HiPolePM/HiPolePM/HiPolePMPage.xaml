@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
 			 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-			  
+			 xmlns:controls="clr-namespace:HiPolePM;assembly=HiPolePM"
 			 x:Class="HiPolePM.HiPolePMPage"
 			 Title="ListView Demo Page">
 <!--	<Label Text="Welcome to Xamarin Forms!123" VerticalOptions="Center" HorizontalOptions="Center" />-->
-	<StackLayout>
+	<!--<StackLayout>
 	    
 	    <Label x:Name="simpleLabel"
 			   Text="A simple Label"
@@ -27,5 +27,13 @@
 	            HorizontalOptions="Center"
 	            VerticalOptions="CenterAndExpand" 
 				Clicked="onButtonClicked"/>
-  </StackLayout>
+  </StackLayout>-->
+	<StackLayout HeightRequest="30" Padding="20">
+			<controls:SegmentedControl>
+				<controls:SegmentedControl.Children>
+					<controls:SegmentedControlOption Text="One" />
+					<controls:SegmentedControlOption Text="Two" />
+				</controls:SegmentedControl.Children>
+			</controls:SegmentedControl>
+		</StackLayout>
 </ContentPage>

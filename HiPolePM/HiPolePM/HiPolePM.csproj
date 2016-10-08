@@ -53,6 +53,7 @@
     <Compile Include="WebService\WeatherResponseModel.cs" />
     <Compile Include="WebService\HiPole\Post\ArticlePostModel.cs" />
     <Compile Include="WebService\HiPole\Post\ArticleContentModel.cs" />
+    <Compile Include="SegmentedControl.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="Xamarin.Forms.Core">
