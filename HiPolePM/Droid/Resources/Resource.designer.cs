@@ -2982,7 +2982,10 @@ namespace HiPolePM.Droid
 			public const int Tabbar = 2130903097;
 			
 			// aapt resource value: 0x7f03003a
-			public const int Toolbar = 2130903098;
+			public const int TabbedControl = 2130903098;
+			
+			// aapt resource value: 0x7f03003b
+			public const int Toolbar = 2130903099;
 			
 			static Layout()
 			{

@@ -5,7 +5,7 @@
 			 x:Class="HiPolePM.HiPolePMPage"
 			 Title="ListView Demo Page">
 <!--	<Label Text="Welcome to Xamarin Forms!123" VerticalOptions="Center" HorizontalOptions="Center" />-->
-	<!--<StackLayout>
+	<StackLayout>
 	    
 	    <Label x:Name="simpleLabel"
 			   Text="A simple Label"
@@ -27,13 +27,21 @@
 	            HorizontalOptions="Center"
 	            VerticalOptions="CenterAndExpand" 
 				Clicked="onButtonClicked"/>
-  </StackLayout>-->
-	<StackLayout HeightRequest="30" Padding="20">
+  </StackLayout>
+	<!--<StackLayout HeightRequest="30" Padding="20">
 			<controls:SegmentedControl>
 				<controls:SegmentedControl.Children>
 					<controls:SegmentedControlOption Text="One" />
 					<controls:SegmentedControlOption Text="Two" />
 				</controls:SegmentedControl.Children>
 			</controls:SegmentedControl>
-		</StackLayout>
+		</StackLayout>-->
+	<!--<StackLayout HeightRequest="30" Padding="20">
+		<controls:TabbedControl>
+			<controls:TabbedControl.Children>
+				<controls:TabbedControlOption Text="One" />
+				<controls:TabbedControlOption Text="Two" />
+			</controls:TabbedControl.Children>
+		</controls:TabbedControl>
+	</StackLayout>-->
 </ContentPage>

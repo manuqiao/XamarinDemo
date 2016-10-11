@@ -5,5 +5,6 @@ namespace HiPolePM
 	{
 		public string Title { get; set; }
 		public string TitleImage { get; set; }
+		public string CellHeight { get; set; }
 	}
 }

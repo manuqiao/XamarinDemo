@@ -25,6 +25,16 @@ namespace HiPolePM
 			foreach (JObject item in posts)
 			{
 				ArticlePostModel postModel = new ArticlePostModel();
+
+				if (posts.IndexOf(item) == 0)
+				{
+					postModel.CellHeight = "100";
+				}
+				else
+				{
+					postModel.CellHeight = "50";
+				}
+
 				postModel.Title = (string)(item["title"]["rendered"]);
 				postModels.Add(postModel);
 			}
